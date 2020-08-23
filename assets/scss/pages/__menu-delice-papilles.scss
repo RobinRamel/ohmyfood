@@ -1,0 +1,9 @@
+.menu-page.menu-page--delice-papilles {
+  background-color: $BG-delice;
+  font-family: $F-segoe;
+
+  h3 {
+    font-family: 'Dancing Script', cursive;
+    @include gradientText(to bottom right, $CS-blue-dark, $CS-blue-medium, $CS-blue-light)
+  }
+}

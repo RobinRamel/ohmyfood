@@ -1,0 +1,9 @@
+.menu-page.menu-page--palette-gout {
+  font-family: $F-segoe;
+  background-color: $BG-palette;
+
+  h3 {
+    font-family: 'Kaushan Script', cursive;
+    @include gradientText2(90deg , $CS-green-dark, $CS-green-light);
+  }
+}

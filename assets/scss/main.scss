@@ -1,0 +1,17 @@
+@import "__reset";
+@import "__variables";
+@import "__mixins";
+@import "__fonts";
+
+@import "__global";
+
+@import "blocks/__header";
+@import "blocks/__footer";
+@import "blocks/__tiles";
+@import "blocks/__buttons";
+
+@import "pages/_menu-page";
+@import "pages/_menu-note-enchantee";
+@import "pages/_menu-chic-francaise";
+@import "pages/_menu-delice-papilles";
+@import "pages/_menu-palette-gout";

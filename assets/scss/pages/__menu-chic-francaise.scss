@@ -1,0 +1,25 @@
+.menu-page.menu-page--chic-francaise {
+  font-family: $F-pax;
+  background-color: $BG-chic;
+
+  h3, h4 {
+    font-family: 'Croissant One', cursive;
+    font-weight: 100;
+  }
+
+  h3 {
+    @include gradientText(to bottom right, $CS-orange, $CS-pink, $CS-purple);
+  }
+
+  .menu-page__entree {
+    color: $CS-orange;
+  }
+
+  .menu-page__plat {
+    color: $CS-pink;
+  }
+
+  .menu-page__dessert {
+    color: $CS-purple;
+  }
+}

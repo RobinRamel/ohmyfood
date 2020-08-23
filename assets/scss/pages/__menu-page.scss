@@ -1,0 +1,107 @@
+.menu-page {
+  max-width: $MW-main;
+  background-color: $C-pink;
+  margin: 5rem auto 0 auto;
+  padding: $G-default-menu $G-default-menu/2;
+  box-shadow: $Bs-tile;
+  //color: ;
+  font-family: 'Kalam', cursive;
+
+  &__entree {
+    padding-top: $G-default-menu;
+  }
+
+  &__plat {
+    padding: $G-default-menu-lower 0;
+  }
+
+  &__dessert {
+    padding-bottom: $G-default-menu-lower;
+  }
+
+  &__title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
+
+    img {
+      width: 30%;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+    padding-bottom: 4rem;
+
+    @include breakpoint(lt-lg) {
+      flex-direction: column;
+
+      &__text {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__text {
+      letter-spacing: 0px;
+    }
+    &__prix {
+      font-weight: bold;
+      font-size: 3.5rem;
+    }
+
+    @include breakpoint(xs) {
+      font-size: 2.5rem;
+
+      &__prix {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  h4 {
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: translateY(10px);
+      width: 0;
+      height: 2px;
+      background-color: $C-brown;
+      transition: $T-tiles;
+    }
+
+
+    &:hover {
+      cursor: default;
+
+      &:after {
+        width: 100%;
+        transition: $T-tiles;
+      }
+    }
+  }
+}
+
+.note {
+  display: flex;
+  justify-content: center;
+
+  &--min {
+    img {
+      width: 60px;
+      height: 60px;
+    }
+
+    h5 {
+      margin: 0;
+    }
+  }
+}

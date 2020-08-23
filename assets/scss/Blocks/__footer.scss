@@ -1,0 +1,41 @@
+
+.footer {
+  padding: 3rem 0;
+  border-top: $Bd-green;
+  position: fixed;
+  bottom: 0;
+
+  .footer-container {
+    display: flex;
+    width: 100%;
+    max-width: 2095px;
+  }
+
+  &__left, &__right {
+    width: 50%;
+    display: flex;
+
+    a {
+      font-size: 2.5rem;
+      color: #F8C365;
+      font-weight: 300;
+      text-decoration: none;
+    }
+
+    &:hover {
+      animation: wiggle 1s;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  &__left {
+    padding-left: 1rem;
+    justify-content: flex-start;
+  }
+
+  &__right {
+    padding-right: 1rem;
+    justify-content: flex-end;
+  }
+
+}

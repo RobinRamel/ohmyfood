@@ -1,0 +1,77 @@
+body, html {
+  font-size: 10px;
+  font-family: roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $C-black;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding: $G-default-menu 0;
+}
+
+h1 {
+  font-size: 5.5rem;
+  font-weight: 900;
+  margin: 0;
+  padding: 2.5rem 0;
+  letter-spacing: -3px;
+  color: $C-secondary;
+
+  a {
+    color: $C-secondary;
+  }
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 10rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+
+  @include breakpoint(xs) {
+    font-size: 7rem;
+  }
+}
+
+h4 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin: 0 2rem;
+  text-align: center;
+}
+
+h5 {
+
+}
+
+header, footer {
+  width: 100%;
+  background-color: #579c87;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 3rem;
+}
+
+.mention-legale {
+  max-width: 1500px;
+  margin: 0 auto;
+}

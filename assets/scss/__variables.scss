@@ -1,0 +1,74 @@
+$C-green: #579c87;
+$C-yellow: #fdcb46;
+$C-black: #000;
+$C-pink: #fcdfdb;
+$C-brown: #3d1319;
+
+$C-primary: $C-green;
+$C-secondary: $C-yellow;
+
+//special color
+$CS-purple: #6e4ccc;
+$CS-pink: #a56799;
+$CS-orange: #c67412;
+
+$CS-blue-dark: #0228dd;
+$CS-blue-medium: #0670f3;
+$CS-blue-light: #229df9;
+
+$CS-green-dark: #4da043;
+$CS-green-light: #beff7f;
+
+//bgcolor
+$BG-note: #fcdfdb;
+$BG-chic: #fff5fe;
+$BG-delice: #edefef;
+$BG-palette: #fdfffd;
+
+// Gouttières
+$G-default-menu: 15rem;
+$G-default-menu-lower: 10rem;
+
+
+// Font weight
+$FW-light: 300;
+$FW-normal: 400;
+$FW-medium: 500;
+$FW-semibold: 600;
+$FW-bold: 700;
+$FW-extrabold: 800;
+$FW-black: 900;
+
+//border
+$Bd-green: 2px solid lighten($C-primary, 20%);
+
+// Z-index
+$ZI-mainScrollable: 5;
+$ZI-header: 10;
+$ZI-pageLoader: 20;
+
+//Box shadow
+$Bs-tile: 0 0 20px 5px rgba(0,0,0,0.15);
+
+//transition timing
+$T-tiles: all .3s ease-in-out;
+
+//Main container size
+$MW-main: 1500px;
+
+//gradient text 3 colors
+@mixin gradientText($deg, $color1, $color2, $color3) {
+  background: linear-gradient($deg, $color1, $color2, $color3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin gradientText2 ($deg, $color1, $color2) {
+  background: linear-gradient($deg, $color1, $color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+//Fonts
+$F-path: './fonts';
+$F-pax: 'Pax', sans-serif;
+$F-segoe: 'Segoe', sans-serif;
