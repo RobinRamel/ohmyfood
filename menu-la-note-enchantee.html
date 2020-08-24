@@ -1,10 +1,24 @@
 <!doctype html>
 <html lang="fr">
 
-<?php include "Blocks/head.php"; ?>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil: Ohmyfood</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
 
 <body>
-<?php include 'Blocks/header.php'; ?>
+<header>
+    <div class="header-container">
+        <h1>
+            <a href="../index.php">ohmyfood</a>
+        </h1>
+    </div>
+</header>
+
 <div class="container">
     <h2>La note enchantée</h2>
     <div class="menu-page menu-page--la-note">
@@ -72,7 +86,17 @@
     </div>
 </div>
 
-<?php include 'Blocks/footer.php'; ?>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer__left">
+            <a href="../mentions-legales.php" target="_blank">Mentions légales</a>
+        </div>
+        <div class="footer__right">
+            <a href="mailto:#">Contactez-nous</a>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
 
