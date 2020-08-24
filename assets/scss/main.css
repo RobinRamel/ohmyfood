@@ -433,11 +433,6 @@ header .header-container {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media (max-width: 1440px) {
-  .container__tiles {
-    justify-content: center;
-  }
-}
 
 .tile {
   position: relative;
