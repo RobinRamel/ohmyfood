@@ -441,7 +441,7 @@ header .header-container {
 
 .tile {
   position: relative;
-  width: 70rem;
+  width: 60rem;
   margin-bottom: 10rem;
   border-radius: 5px;
   overflow: hidden;
