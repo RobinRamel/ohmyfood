@@ -435,7 +435,7 @@ header .header-container {
 }
 
 .container__tiles {
-  max-width: 1500px;
+  max-width: 1300px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -659,7 +659,7 @@ header .header-container {
   }
 }
 .menu-page {
-  max-width: 1500px;
+  max-width: 1300px;
   background-color: #fcdfdb;
   margin: 5rem auto 0 auto;
   padding: 15rem 7.5rem;
