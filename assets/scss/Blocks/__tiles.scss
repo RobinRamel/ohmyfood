@@ -4,6 +4,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @include breakpoint(lt-lg) {
+    justify-content: center;
+  }
 }
 
 .tile {
@@ -16,7 +20,7 @@
   transition: $T-tiles;
   padding: 30rem 0;
 
-  @include breakpoint(lt-sm) {
+  @include breakpoint(lt-lg) {
     width: 100%;
   }
 
