@@ -34,10 +34,6 @@
     }
   }
 
-  &__menu {
-    transition: $T-tiles;
-  }
-
   img {
     width: 100%;
     height: 100%;
@@ -56,6 +52,10 @@
     margin: 0 auto 5rem auto;
     padding: 0 .5rem;
     transition: $T-tiles;
+
+    @include breakpoint(only-xs) {
+      font-size: 2rem;
+    }
   }
 
   &__menu {
@@ -63,6 +63,11 @@
     font-family: $F-segoe;
     display: inline-block;
     margin: 0 auto;
+    transition: $T-tiles;
+
+    @include breakpoint(only-xs) {
+      font-size: 4rem;
+    }
   }
 
   &--note {
@@ -106,6 +111,12 @@
       font-family: 'Dancing Script', cursive;
       @include gradientText(to bottom right, $CS-blue-dark, $CS-blue-medium, $CS-blue-light);
       font-size: 5.5rem;
+      @include breakpoint(only-xs) {
+        font-size: 3rem;
+      }
+      @include breakpoint(xs) {
+        font-size: 3.5rem;
+      }
     }
 
     .tile__menu {
@@ -120,6 +131,12 @@
       font-family: 'Kaushan Script', cursive;
       @include gradientText2(90deg , $CS-green-dark, $CS-green-light);
       font-size: 5.5rem;
+      @include breakpoint(only-xs) {
+        font-size: 3rem;
+      }
+      @include breakpoint(xs) {
+        font-size: 4rem;
+      }
     }
 
     .tile__menu {

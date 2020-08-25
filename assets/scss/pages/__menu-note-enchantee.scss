@@ -10,5 +10,13 @@
 .note.note--min {
    h3 {
      font-size: 6rem;
+
+     @include breakpoint(only-xs) {
+       font-size: 3rem;
+     }
+
+     @include breakpoint(xs) {
+       font-size: 4.5rem;
+     }
    }
 }

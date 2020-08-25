@@ -13,17 +13,33 @@
     text-decoration: none;
     border-radius: 5px;
 
+    @include breakpoint(only-xs) {
+      font-size: 2rem;
+    }
+
     &--inline {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
 
       .wave {
         margin-left: 2rem;
+      }
+
+      @include breakpoint(only-xs) {
+        flex-direction: column;
+
+        .wave {
+          margin-left: 0;
+          margin-top: 2rem;
+        }
       }
     }
   }
 }
 
 .wave {
+  min-width: 60px;
 
   .dot {
     display:inline-block;
