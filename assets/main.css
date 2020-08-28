@@ -759,10 +759,20 @@ header .header-container {
   margin-bottom: 6rem;
 }
 
+@media (max-width: 640px) {
+  .menu-page__title-row {
+    justify-content: center;
+  }
+}
 .menu-page__title-row img {
   width: 30%;
 }
 
+@media (max-width: 640px) {
+  .menu-page__title-row img {
+    display: none;
+  }
+}
 .menu-page__row {
   display: flex;
   justify-content: space-between;
@@ -788,10 +798,14 @@ header .header-container {
   font-size: 3.5rem;
 }
 
+@media (max-width: 1024px) {
+  .menu-page__row {
+    text-align: center;
+  }
+}
 @media (max-width: 640px) {
   .menu-page__row {
     font-size: 2rem;
-    text-align: center;
   }
 
   .menu-page__row__prix {
